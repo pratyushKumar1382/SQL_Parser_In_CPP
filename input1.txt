@@ -1,0 +1,20 @@
+CREATE TABLE school (
+acc_Num INT ,
+name VARCHAR(20) ,
+aifb DECIMAL(2,3) ,
+PRIMARY KEY (acc_Num)
+);
+
+CREATE TABLE temp (
+x INT ,
+PRIMARY KEY (x)
+);
+
+CREATE TABLE student (
+abc INT ,
+bcd INT ,
+def INT ,
+PRIMARY KEY (abc) ,
+FOREIGN KEY (abc) REFERENCES school,
+FOREIGN KEY (bcd) REFERENCES temp
+);
